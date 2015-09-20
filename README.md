@@ -9,6 +9,8 @@ How to work at the task
 
 1. fork the repository
 2. clone the forked repository
-3. `cd` and `meteor`
-4. wirte code and check test result
-5. commit and push
+3. `cd meteor-task-twitter-clone`
+4. `git submodule init && git submodule update`
+5. `meteor`
+6. wirte code and check test result
+7. commit and push
