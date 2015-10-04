@@ -5,7 +5,7 @@
 /* global describe, it, expect, Mongo, Posts */
 
 var LOCALE_TEXTS = {
-  'ja:Collection': 'コレクション',
+  'ja:step03: Collection': 'step03: コレクション',
   'ja:The "Posts" is defined': '"Posts"が定義されている',
   'ja:The "Posts" is a Mongo.Collection': '"Posts"がMongo.Collectionである'
 };
@@ -15,7 +15,7 @@ function t(str) {
   return LOCALE_TEXTS[lang + ':' + str] || str;
 }
 
-describe(t('Collection'), function() {
+describe(t('step03: Collection'), function() {
   'use strict';
 
   it(t('The "Posts" is defined'), function() {

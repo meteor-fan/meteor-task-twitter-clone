@@ -6,28 +6,28 @@
 /* global beforeAll */
 
 var LOCALE_TEXTS = {
-  'ja:Title': 'タイトル',
+  'ja:step01: Title': 'step01: タイトル',
   'ja:The HTML title is "Twitter Clone"': 'HTMLタイトルが"Twitter Clone"である',
   'ja:The H1 title is "Twitter Clone"': 'H1タイトルが"Twitter Clone"である',
-  'ja:Twitter authentication': 'Twitter認証',
+  'ja:step02: Twitter authentication': 'step02: Twitter認証',
   'ja:accounts-twitter package is loaded': 'accounts-twitterパッケージが読み込まれている',
   'ja:accounts-ui package is loaded': 'accounts-uiパッケージが読み込まれている',
   'ja:The login button is displayed': 'ログインボタンが表示されている',
-  'ja:Collection': 'コレクション',
+  'ja:step03: Collection': 'step03: コレクション',
   'ja:The "Posts" is defined': '"Posts"が定義されている',
   'ja:The "Posts" is a Mongo.Collection': '"Posts"がMongo.Collectionである',
-  'ja:New post form': '新規投稿フォーム',
+  'ja:step04: New post form': 'step04: 新規投稿フォーム',
   'ja:An input field in a form with "new-post" class is displayed': '"new-post"クラスを持つFORMにINPUTフィールドが表示されている',
   'ja:An event handler for "submit .new-post" is defined': '"submit .new-post"のイベントハンドラが定義されている',
   'ja:Submitting the form adds a new item in the "Posts"': 'フォーム投稿すると"Posts"にアイテムが一つ追加される',
-  'ja:Adding new posts': '新規投稿追加',
+  'ja:step05: Adding new posts': 'step05: 新規投稿追加',
   'ja:The new item has "text" property which is the form text': 'その新しいアイテムは"text"というプロパティを持ち、フォームのテキストが入っている',
   'ja:The new item has "createdAt" property of type "Date"': 'その新しいアイテムは"createdAt"というプロパティを持ち、"Date"の型である',
   'ja:The new item has "owner" property which is the userId': 'その新しいアイテムは"owner"というプロパティを持ち、userIdが入っている',
-  'ja:Showing posts': '投稿の表示',
+  'ja:step06: Showing posts': 'step06: 投稿の表示',
   'ja:"posts" helper is defined': '"posts"ヘルパーが定義されている',
   'ja:Posts are shown in UL with "posts" class': '投稿がULタグ("posts"クラス付き)で表示されている',
-'ja:Permission check': '権限の確認',
+'ja:step07: Permission check': 'step07: 権限の確認',
   'ja:Submitting the form fails to add a new item in the "Posts"': 'ログアウト時はフォーム投稿しても"Posts"にアイテムは追加されない'
 };
 
@@ -36,7 +36,7 @@ function t(str) {
   return LOCALE_TEXTS[lang + ':' + str] || str;
 }
 
-describe(t('Title'), function() {
+describe(t('step01: Title'), function() {
   'use strict';
 
   it(t('The HTML title is "Twitter Clone"'), function() {
@@ -48,7 +48,7 @@ describe(t('Title'), function() {
   });
 });
 
-describe(t('Twitter authentication'), function() {
+describe(t('step02: Twitter authentication'), function() {
   'use strict';
 
   it(t('accounts-twitter package is loaded'), function() {
@@ -64,7 +64,7 @@ describe(t('Twitter authentication'), function() {
   });
 });
 
-describe(t('Collection'), function() {
+describe(t('step03: Collection'), function() {
   'use strict';
 
   it(t('The "Posts" is defined'), function() {
@@ -76,7 +76,7 @@ describe(t('Collection'), function() {
   });
 });
 
-describe(t('New post form'), function() {
+describe(t('step04: New post form'), function() {
   'use strict';
 
   it(t('An input field in a form with "new-post" class is displayed'), function() {
@@ -99,7 +99,7 @@ describe(t('New post form'), function() {
   });
 });
 
-describe(t('Adding new posts'), function() {
+describe(t('step05: Adding new posts'), function() {
   'use strict';
 
   beforeAll(function(done) {
@@ -139,7 +139,7 @@ describe(t('Adding new posts'), function() {
   });
 });
 
-describe(t('Showing posts'), function() {
+describe(t('step06: Showing posts'), function() {
   'use strict';
 
   beforeAll(function(done) {
@@ -166,7 +166,7 @@ describe(t('Showing posts'), function() {
   });
 });
 
-describe(t('Permission check'), function() {
+describe(t('step07: Permission check'), function() {
   'use strict';
 
   beforeAll(function(done) {
