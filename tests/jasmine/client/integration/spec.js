@@ -106,7 +106,7 @@ describe(t('Adding new posts'), function() {
     Meteor.call('clearAllPosts', function() {
       if (Meteor.userId()) return done();
       Meteor.loginWithTwitter({
-        loginStyle: 'popup'
+        loginStyle: 'redirect'
       }, done);
     });
   });
