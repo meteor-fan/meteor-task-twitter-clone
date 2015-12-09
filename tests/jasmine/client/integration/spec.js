@@ -9,8 +9,8 @@ var LOCALE_TEXTS = {
   'ja:step01: Title': 'step01: タイトル',
   'ja:The HTML title is "Twitter Clone"': 'HTMLタイトルが"Twitter Clone"である',
   'ja:The H1 title is "Twitter Clone"': 'H1タイトルが"Twitter Clone"である',
-  'ja:step02: Twitter authentication': 'step02: Twitter認証',
-  'ja:accounts-twitter package is loaded': 'accounts-twitterパッケージが読み込まれている',
+  'ja:step02: Google authentication': 'step02: Google認証',
+  'ja:accounts-google package is loaded': 'accounts-googleパッケージが読み込まれている',
   'ja:accounts-ui package is loaded': 'accounts-uiパッケージが読み込まれている',
   'ja:The login button is displayed': 'ログインボタンが表示されている',
   'ja:step03: Collection': 'step03: コレクション',
@@ -48,11 +48,11 @@ describe(t('step01: Title'), function() {
   });
 });
 
-describe(t('step02: Twitter authentication'), function() {
+describe(t('step02: Google authentication'), function() {
   'use strict';
 
-  it(t('accounts-twitter package is loaded'), function() {
-    expect(Meteor.loginWithTwitter).toBeDefined();
+  it(t('accounts-google package is loaded'), function() {
+    expect(Meteor.loginWithGoogle).toBeDefined();
   });
 
   it(t('accounts-ui package is loaded'), function() {
@@ -105,7 +105,7 @@ describe(t('step05: Adding new posts'), function() {
   beforeAll(function(done) {
     Meteor.call('clearAllPosts', function() {
       if (Meteor.userId()) return done();
-      Meteor.loginWithTwitter({
+      Meteor.loginWithGoogle({
         loginStyle: 'redirect'
       }, done);
     });

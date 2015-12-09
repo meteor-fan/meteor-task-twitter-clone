@@ -1,3 +1,0 @@
-[submodule "packages/twitter-stub"]
-	path = packages/twitter-stub
-	url = https://github.com/dai-shi/meteor-twitter-stub.git

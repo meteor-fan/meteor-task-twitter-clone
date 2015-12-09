@@ -10,7 +10,6 @@ How to work at the task
 1. fork the repository
 2. clone the forked repository
 3. `cd meteor-task-twitter-clone`
-4. `git submodule init && git submodule update`
 5. `meteor`
 6. wirte code for each task steps
 7. commit and push
@@ -21,8 +20,8 @@ Task steps
 ### step01: Title
 - change HTML and H1 titles
 
-### step02: Twitter authentication
-- add Twitter authentication
+### step02: Google authentication
+- add Google authentication
 - also configure it, and check if login is successful
 
 ### step03: Collection
@@ -40,7 +39,7 @@ Task steps
 
 ### step07: Permission check
 - make it so that unauthenticated users cannot add a post
-- use "Collection.allow"
+- (currently having issue)
 
 ### step08: User profile
 - show username and profile image for each posts
