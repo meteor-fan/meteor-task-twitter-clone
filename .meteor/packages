@@ -9,4 +9,4 @@ autopublish
 insecure
 sanjo:jasmine
 velocity:html-reporter
-emmerge:google-fake
+daishi:google-stub
