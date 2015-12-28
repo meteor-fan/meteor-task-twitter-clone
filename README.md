@@ -39,7 +39,8 @@ Task steps
 
 ### step07: Permission check
 - make it so that unauthenticated users cannot add a post
-- (currently having issue)
+
+(following steps do not have tests.)
 
 ### step08: User profile
 - show username and profile image for each posts
