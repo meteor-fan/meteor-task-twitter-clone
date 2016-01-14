@@ -38,17 +38,18 @@ Task steps
 - show posts in the collection
 
 ### step07: Permission check
+- remove "insecure" package
 - make it so that unauthenticated users cannot add a post
 
 (following steps do not have tests.)
 
 ### step08: User profile
-- show username and profile image for each posts
+- show username for each posts
 
 ### step09: Paging
+- remove "autopublish" package
 - sort the posts in reverse chronological order
 - only show some of posts and add "see more" feature (a.k.a. infinity scroll)
-- use "publish" to publish only required posts
 
 ### step10: Notification
 - show unread posts count or highlight unread posts
